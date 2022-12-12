@@ -130,13 +130,13 @@ $(document).ready(function () {
                       <td>
                       <span style="font-size:13px"><b>Title:</b> ${item.snippet.title}</span><br>
                       <span style="font-size:13px"><b>Description:</b> ${item.snippet.description}</span><br><br>
-                      <a target="_blank" class="btn btn-danger btn-block" href="https://www.youtube.com/watch?v=${item.id.videoId}">Video Link</a>
+                      <a target="_blank" style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" href="https://www.youtube.com/watch?v=${item.id.videoId}">Video Link</a>
   
                       <br><br>
-                      <button class="btn btn-danger btn-block" onclick="aaha('https://www.youtube.com/watch?v=${item.id.videoId}')">Download</button>
+                      <button style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" onclick="aaha('https://www.youtube.com/watch?v=${item.id.videoId}')">Download</button>
                       </td>
                       <td>
-                      <a target="_blank" class="btn btn-danger btn-block" href="https://www.youtube.com/channel/${item.snippet.channelId}">${item.snippet.channelTitle}</a>
+                      <a target="_blank" style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" href="https://www.youtube.com/channel/${item.snippet.channelId}">${item.snippet.channelTitle}</a>
                       </td>
                       </tr>
   

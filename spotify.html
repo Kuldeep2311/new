@@ -37,15 +37,30 @@
           margin-top: 1rem;
           width: 100%;
           padding: 10px;
+          background-color: rgb(25,245,170);
+          color: black;
         " id="btn" class="btn btn-danger btn-block">
             Search Videos
           </button>
+        </div>
+        <div class="container">
+          
         </div>
       </form>   
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
+    <!-- <script src="assets/js/spotify.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+      $('#btn').click(function(){
+      let c=$('#search').val;
+      $('.container').html(c);
+      });
+    });
+    </script>
 </body>
 
 </html>
