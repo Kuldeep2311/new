@@ -148,7 +148,7 @@ $(document).ready(function () {
   });
    
     function aaha(test){
-  const serverURL = 'https://twond-try.onrender.com/';
+  const serverURL = 'https://twond-try.onrender.com';
   console.log(test)
   const sendButton = (videoURL=String(test), format="video&audio", quality="high") => {
       fetch(`${serverURL}/check-download?URL=${videoURL}`)
