@@ -130,13 +130,31 @@ $(document).ready(function () {
                       <td>
                       <span style="font-size:13px"><b>Title:</b> ${item.snippet.title}</span><br>
                       <span style="font-size:13px"><b>Description:</b> ${item.snippet.description}</span><br><br>
-                      <a target="_blank" style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" href="https://www.youtube.com/watch?v=${item.id.videoId}">Video Link</a>
+                     
+                      <h3>Video Link<br>
+                      <a target="_blank" href="https://www.youtube.com/watch?v=${item.id.videoId}">
+                      <button  class="btn btn-primary" style="background: rgb(24,25,25);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-link" style="font-size: 22px;">
+                      <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path>
+                      <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path>
+                      </svg></button>
+                      </a>
   
-                      <br><br>
-                      <button style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" onclick="aaha('https://www.youtube.com/watch?v=${item.id.videoId}')">Download</button>
+                      <br>
+                      <h3>Download Now<br>
+        
+                      <button onclick="aaha('https://www.youtube.com/watch?v=${item.id.videoId}')" class="btn btn-primary" type="button" style="background: rgb(24,24,24);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-download" style="font-size: 22px;">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                      </svg></button> 
                       </td>
                       <td>
-                      <a target="_blank" style="background-color: rgb(25,245,170);color: black;" class="btn btn-danger btn-block" href="https://www.youtube.com/channel/${item.snippet.channelId}">${item.snippet.channelTitle}</a>
+                      
+                      <h3>${item.snippet.channelTitle}<br>
+                      <a target="_blank" href="https://www.youtube.com/channel/${item.snippet.channelId}">
+                      <button class="btn btn-primary" type="button" style="margin: auto;background: rgb(24,24,24);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cursor-fill" style="font-size: 22px;margin: auto auto;padding-top: 0px;">
+                      <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"></path>
+                      </svg></button>
+                      </a>
                       </td>
                       </tr>
   
