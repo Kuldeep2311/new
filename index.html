@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel = "icon" href ="assets/img/All In One (1).png" type = "image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
+</head>
+
+<body>
+    <h1>6337. Count Distinct Numbers on Board - LeetCode</h1>
+    <p> You are given a positive integer n, that is initially placed on a board. Every day, for 109 days, you perform <br> the following procedure:
+    <ul>
+        <li>For each number x present on the board, find all numbers 1 <= i <= n such that x % i == 1</li>
+        <li>Then, place those numbers on the board.</li>
+    </ul>
+        Return the number of distinct integers present on the board after 109 days have elapsed.
+    <h3>NOTE:</h3>
+    <ul>
+        <li>Once a number is placed on the board, it will remain on it until the end</li>
+        <li>% stands for the modulo operation. For example, 14 % 3 is 2.</li>
+    </ul>
+    <h2>SOLUTION [C++]
+    </h2>
+    <br>
+    <h2>COPY BELOW CODE</h2>
+    class Solution { <br>
+    public: <br>
+    int distinctIntegers(int n) { <br>
+        if(n==1) <br>
+            return 1; <br>
+        return n-1; <br>
+    }
+};
+</p>
+
+</body>
+
+</html>
